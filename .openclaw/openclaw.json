@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.15",
+    "lastTouchedAt": "2026-02-19T12:02:28.667Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-17T05:47:13.610Z",
+    "lastRunVersion": "2026.2.15",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "moonshot:default": {
+        "provider": "moonshot",
+        "mode": "api_key"
+      },
+      "zai:default": {
+        "provider": "zai",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.ai/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "kimi-k2.5",
+            "name": "Kimi K2.5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "zai": {
+        "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "GLM-4.7 Flash",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flashx",
+            "name": "GLM-4.7 FlashX",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      },
+      "bailian": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "sk-4ea5b3f5429e4b6d9851858aefe6898b",
+        "api": "openai-completions",
+        "models": []
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zai/glm-5"
+      },
+      "models": {
+        "moonshot/kimi-k2.5": {
+          "alias": "Kimi"
+        },
+        "zai/glm-5": {
+          "alias": "GLM"
+        }
+      },
+      "workspace": "/Users/linhuasun/Desktop/OPENCLAW/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "all"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "feishu": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "groupPolicy": "open",
+      "streaming": true,
+      "blockStreaming": true,
+      "accounts": {
+        "main": {
+          "appId": "cli_a91c61da9138dcc2",
+          "appSecret": "PUjLSGBxE58edlDytAaKxcPvzJRso4RP",
+          "botName": "OpenClaw"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 8080,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "7b8b7bf0a015fba82dd6c06b0f165e36904bf1504aee505a"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}

@@ -34,4 +34,4 @@ ENV HOST=0.0.0.0
 EXPOSE 8080
 
 # 启动 OpenClaw Gateway
-CMD ["npx", "openclaw", "gateway", "--port", "8080", "--host", "0.0.0.0"]
+CMD ["npx", "openclaw", "gateway", "--port", "8080"]

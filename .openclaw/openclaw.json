@@ -137,7 +137,7 @@
           "alias": "GLM"
         }
       },
-      "workspace": "/Users/linhuasun/Desktop/OPENCLAW/.openclaw/workspace",
+      "workspace": "/app/.openclaw/workspace",
       "compaction": {
         "mode": "safeguard"
       },
@@ -155,15 +155,6 @@
     "nativeSkills": "auto"
   },
   "channels": {
-    "whatsapp": {
-      "dmPolicy": "open",
-      "allowFrom": [
-        "*"
-      ],
-      "groupPolicy": "allowlist",
-      "debounceMs": 0,
-      "mediaMaxMb": 50
-    },
     "feishu": {
       "enabled": true,
       "dmPolicy": "open",
@@ -175,9 +166,9 @@
       "blockStreaming": true,
       "accounts": {
         "main": {
-          "appId": "cli_a91c61da9138dcc2",
-          "appSecret": "PUjLSGBxE58edlDytAaKxcPvzJRso4RP",
-          "botName": "OpenClaw"
+          "appId": "cli_a9122b9ddfa1dcc9",
+          "appSecret": "FCuQyT6PsFJMXgBiBV80RdObbOkfcWiO",
+          "botName": "OpenClaw-Cloud"
         }
       }
     }
@@ -197,9 +188,6 @@
   },
   "plugins": {
     "entries": {
-      "whatsapp": {
-        "enabled": true
-      },
       "feishu": {
         "enabled": true
       }

@@ -185,7 +185,7 @@
   "gateway": {
     "port": 8080,
     "mode": "local",
-    "bind": "all",
+    "bind": "lan",
     "auth": {
       "mode": "token",
       "token": "7b8b7bf0a015fba82dd6c06b0f165e36904bf1504aee505a"

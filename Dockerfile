@@ -1,7 +1,8 @@
 FROM node:22-slim
 
-# 安装系统依赖 (Python, FFmpeg 及无头浏览器运行所需)
+# 安装系统依赖 (Python, FFmpeg, Git 及无头浏览器运行所需)
 RUN apt-get update && apt-get install -y \
+    git \
     python3 python3-pip python3-venv \
     ffmpeg \
     wget gnupg \

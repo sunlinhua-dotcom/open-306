@@ -10,6 +10,7 @@
 |--------|------|-------|
 | **炼丹：** | AI 生成视频 | Seedance 2.0 |
 | **筑基：** | 代码视频 | Remotion |
+| **悟道：** | McKinsey 咨询分析 | mckinsey-consultant |
 
 ---
 
@@ -54,6 +55,9 @@
 
 筑基：做一个10秒的数字滚动动画
 → Remotion 生成代码视频
+
+悟道：分析中国新能源汽车市场
+→ McKinsey 咨询（Issue Tree → Dummy Pages → PPT）
 
 元婴：帮我分析这份数据
 → spawn 子代理处理

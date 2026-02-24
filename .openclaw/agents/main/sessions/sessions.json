@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "50e1c219-3acf-4b74-985b-10a19ada6589",
-    "updatedAt": 1771934009539,
+    "updatedAt": 1771941577749,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -373,22 +373,22 @@
       ],
       "version": 0
     },
-    "inputTokens": 40871,
-    "outputTokens": 80,
-    "cacheRead": 46656,
+    "inputTokens": 131949,
+    "outputTokens": 375,
+    "cacheRead": 59840,
     "cacheWrite": 0,
-    "totalTokens": 43873,
+    "totalTokens": 48216,
     "totalTokensFresh": true,
-    "modelProvider": "moonshot",
-    "model": "kimi-k2.5",
-    "contextTokens": 256000,
+    "modelProvider": "zai",
+    "model": "glm-5",
+    "contextTokens": 204800,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771934003642,
+      "generatedAt": 1771941526368,
       "sessionId": "50e1c219-3acf-4b74-985b-10a19ada6589",
       "sessionKey": "agent:main:main",
-      "provider": "moonshot",
-      "model": "kimi-k2.5",
+      "provider": "zai",
+      "model": "glm-5",
       "workspaceDir": "/Users/linhuasun/Desktop/OPENCLAW/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -397,9 +397,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 45096,
+        "chars": 45087,
         "projectContextChars": 20390,
-        "nonProjectContextChars": 24706
+        "nonProjectContextChars": 24697
       },
       "injectedWorkspaceFiles": [
         {
@@ -755,11 +755,9 @@
         ]
       }
     },
-    "lastHeartbeatText": "在终端执行这条命令：\n\n```bash\ncat > ~/.openclaw/exec-approvals.json << 'EOF'\n{\n  \"version\": 1,\n  \"defaults\": {\n    \"security\": \"full\",\n    \"ask\": \"off\"\n  },\n  \"agents\": {}\n}\nEOF\n```\n\n执行完告诉我。",
-    "lastHeartbeatSentAt": 1771918303433,
-    "providerOverride": "moonshot",
-    "modelOverride": "kimi-k2.5",
-    "authProfileOverride": "moonshot:default",
+    "lastHeartbeatText": "审批还在卡住。**请先执行这个重启 Gateway**：\n\n```bash\nkill $(lsof -ti :18789)\n```\n\n执行后等几秒，Gateway 会自动重启，然后我就能自由执行命令了。\n\n---\n\n关于网络问题，你先告诉我：\n1. 你用的是**什么代理**？（Clash、V2Ray、Shadowrocket？）\n2. 代理**还在运行吗**？\n3",
+    "lastHeartbeatSentAt": 1771939573543,
+    "authProfileOverride": "zai:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0
   }

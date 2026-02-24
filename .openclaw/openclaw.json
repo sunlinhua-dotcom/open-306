@@ -25,12 +25,9 @@
     "mode": "merge",
     "providers": {
       "moonshot": {
-        "baseUrl": "https://api.kimi.com/coding/v1",
+        "baseUrl": "http://127.0.0.1:18791/v1",
         "apiKey": "sk-kimi-rHAeGCzy62AN9kNFsQjYQ0qUDUIijJA2rYGD9rJYZdusWd2DUB6TCqd8DSP84s1x",
         "api": "openai-completions",
-        "headers": {
-          "User-Agent": "claude-code/1.0"
-        },
         "models": [
           {
             "id": "kimi-k2.5",
@@ -157,6 +154,16 @@
   "commands": {
     "native": "auto",
     "nativeSkills": "auto"
+  },
+  "tools": {
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "feishu": [
+          "*"
+        ]
+      }
+    }
   },
   "channels": {
     "feishu": {

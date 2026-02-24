@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "50e1c219-3acf-4b74-985b-10a19ada6589",
-    "updatedAt": 1771916459580,
+    "updatedAt": 1771929627697,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -373,25 +373,22 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "zai:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 28935,
-    "outputTokens": 766,
-    "cacheRead": 95552,
+    "inputTokens": 40871,
+    "outputTokens": 80,
+    "cacheRead": 46656,
     "cacheWrite": 0,
-    "totalTokens": 31357,
+    "totalTokens": 43873,
     "totalTokensFresh": true,
-    "modelProvider": "zai",
-    "model": "glm-5",
-    "contextTokens": 204800,
+    "modelProvider": "moonshot",
+    "model": "kimi-k2.5",
+    "contextTokens": 256000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771916206507,
+      "generatedAt": 1771929617066,
       "sessionId": "50e1c219-3acf-4b74-985b-10a19ada6589",
       "sessionKey": "agent:main:main",
-      "provider": "zai",
-      "model": "glm-5",
+      "provider": "moonshot",
+      "model": "kimi-k2.5",
       "workspaceDir": "/Users/linhuasun/Desktop/OPENCLAW/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -400,9 +397,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 45087,
+        "chars": 45096,
         "projectContextChars": 20390,
-        "nonProjectContextChars": 24697
+        "nonProjectContextChars": 24706
       },
       "injectedWorkspaceFiles": [
         {
@@ -757,6 +754,13 @@
           }
         ]
       }
-    }
+    },
+    "lastHeartbeatText": "在终端执行这条命令：\n\n```bash\ncat > ~/.openclaw/exec-approvals.json << 'EOF'\n{\n  \"version\": 1,\n  \"defaults\": {\n    \"security\": \"full\",\n    \"ask\": \"off\"\n  },\n  \"agents\": {}\n}\nEOF\n```\n\n执行完告诉我。",
+    "lastHeartbeatSentAt": 1771918303433,
+    "providerOverride": "moonshot",
+    "modelOverride": "kimi-k2.5",
+    "authProfileOverride": "moonshot:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
   }
 }

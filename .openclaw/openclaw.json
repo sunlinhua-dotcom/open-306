@@ -25,13 +25,17 @@
     "mode": "merge",
     "providers": {
       "moonshot": {
-        "baseUrl": "https://api.moonshot.ai/v1",
+        "baseUrl": "https://api.kimi.com/coding/v1",
+        "apiKey": "sk-kimi-rHAeGCzy62AN9kNFsQjYQ0qUDUIijJA2rYGD9rJYZdusWd2DUB6TCqd8DSP84s1x",
         "api": "openai-completions",
+        "headers": {
+          "User-Agent": "claude-code/1.0"
+        },
         "models": [
           {
             "id": "kimi-k2.5",
             "name": "Kimi K2.5",
-            "reasoning": false,
+            "reasoning": true,
             "input": [
               "text"
             ],
